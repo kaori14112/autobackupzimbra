@@ -7,4 +7,4 @@
       * $2 user backup
       * $3 IP backup server
       * $4 Directory to contain backup files on destination folders
-# Report if you got problem
+
