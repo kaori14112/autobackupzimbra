@@ -18,7 +18,7 @@ fi
 echo "Generating backup files ..."
 su - zimbra -c "/opt/backup/SCRIPT_ZIBRA_BACKUP_ALL_ACCOUNTS/zimbra_backup_allaccounts.sh"
 su - zimbra -c  "/opt/backup/SCRIPT_ZIBRA_BACKUP_ALL_ACCOUNTS/zimbra_backup_account_password.sh"
-echo "Sending files to backup all email accounts for Backup Server (125.212.251.14 \o/ ) ..."
+echo "Sending files to backup all email accounts for Backup Server ($3 \o/ ) ..."
 rsync -avH $ZBACKUP -e "ssh -p $1" $2@$3:$4
 before2="$(date +%s)"
 #
